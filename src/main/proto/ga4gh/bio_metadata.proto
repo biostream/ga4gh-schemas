@@ -3,6 +3,7 @@ syntax = "proto3";
 package ga4gh;
 
 import "ga4gh/common.proto";
+import "google/protobuf/struct.proto";
 
 
 // An individual (or subject) typically corresponds to an individual
@@ -47,7 +48,7 @@ message Individual {
   OntologyTerm sex = 8;
 
   // A map of additional information regarding the Individual.
-  Attributes attributes = 10;
+  google.protobuf.Struct attributes = 10;
 
 }
 
