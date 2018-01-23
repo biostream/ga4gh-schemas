@@ -93,7 +93,7 @@ message Biosample {
   string individual_id = 8;
 
   // A map of additional information about the Biosample.
-  Attributes attributes = 10;
+  google.protobuf.Struct attributes = 10;
 
   // An age object describing the age of the individual this biosample was
   // derived from at the time of collection. The Age object allows the encoding
